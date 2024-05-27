@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:padding="20dp">
+
+        <android.widget.SearchView
+            android:id="@+id/secondSearchView"
+            android:layout_width="@dimen/default_width"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:queryHint="Search here..."
+            android:iconifiedByDefault="false"
+            android:background="@drawable/searchview_background"
+            android:queryBackground="@android:color/transparent"
+            />
+        <ScrollView
+            android:layout_width="@dimen/default_width"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/horizontal_recycler_view"
+                android:layout_width="@dimen/default_width"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="15dp"
+                android:clipToPadding="false"
+                android:scrollbars="horizontal" />
+        </ScrollView>
+
+        <include layout="@layout/results_list_container"/>
+</LinearLayout>

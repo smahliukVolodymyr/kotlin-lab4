@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="353dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:queryHint="Search here..."
+            android:iconifiedByDefault="false"
+            android:background="@drawable/searchview_background"
+            android:queryBackground="@android:color/transparent"
+            />
+
+        <include layout="@layout/main_activity_banner"/>
+        <include layout="@layout/popular_categories_container"/>
+        <include layout="@layout/popular_products_container"/>
+
+    </LinearLayout>
+</ScrollView>

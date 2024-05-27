@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/default_width"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginEnd="104dp">
+
+        <TextView
+            android:id="@+id/results_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/results_header_text"/>
+        <TextView
+            android:id="@+id/results_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/results_quantity_text"
+            android:layout_marginBottom="18dp"/>
+        <TextView
+            android:id="@+id/results_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="@string/results_price_text"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/image_background">
+        <ImageView
+            android:id="@+id/results_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/no_image_icon"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/popular_category_img_description" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/popular_item_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_frame"
+            android:text="@string/results_button_text"
+            android:layout_marginBottom="15dp"
+            />
+         <include layout="@layout/quantity_selector"/>
+    </LinearLayout>
+
+</LinearLayout>

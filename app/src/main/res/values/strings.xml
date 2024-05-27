@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">lab3</string>
+    <string name="header1_text">Our latest giveaway</string>
+    <string name="header2_text">Popular categories</string>
+    <string name="header3_text">Popular products</string>
+    <string name="category1_text">Makeup</string>
+    <string name="category2_text">Skincare</string>
+    <string name="category3_text">Hands</string>
+    <string name="category4_text">Body</string>
+    <string name="image_description">no image</string>
+    <string name="product_item_header">Product name</string>
+    <string name="product_item_description"> Product description some text</string>
+    <string name="popular_category_img_description">Photo of product</string>
+    <string name="like_img_description">like icon</string>
+    <string name="default_button_text">some text</string>
+    <string name="header4_text">Results</string>
+    <string name="results_button_text">Add</string>
+    <string name="results_header_text">Eye patches</string>
+    <string name="results_quantity_text">1 pack 60 items</string>
+    <string name="results_price_text">129$</string>
+    <string name="default_quantity">1</string>
+    <string name="minus_icon">minus icon</string>
+    <string name="plus_icon">plus icon</string>
+
+
+</resources>
+
+
